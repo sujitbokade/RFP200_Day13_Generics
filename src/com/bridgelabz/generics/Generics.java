@@ -1,22 +1,22 @@
 package com.bridgelabz.generics;
 
 public class Generics {
-    public float maximumFloat(Float num1, Float num2, Float num3) {
-        float max = num1;
-        if (num2.compareTo(max) > 0)
-            max = num2;
-        if (num3.compareTo(max) > 0)
-            max = num3;
+    public String maximumString(String str1, String str2, String str3) {
+        String max = str1;
+        if (str2.compareTo(max) > 0)
+            max = str2;
+        if (str3.compareTo(max) > 0)
+            max = str3;
         return max;
     }
 
     public static void main(String[] args) {
-        float num1 = 4.5f;
-        float num2 = 3.5f;
-        float num3 = 5.6f;
+        String str1 = "Apple";
+        String str2 = "Peach";
+        String str3 = "Banana";
 
         Generics generics = new Generics();
-        float maxNumber = generics.maximumFloat(num1, num2, num3);
-        System.out.println("Maximum Number is " + maxNumber);
+        String maxString = generics.maximumString(str1, str2, str3);
+        System.out.println("Maximum String is " + maxString);
     }
 }
